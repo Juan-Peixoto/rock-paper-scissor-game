@@ -4,8 +4,100 @@
   font-size: 100%;
   outline: none;
   border: none;
+  font-family: "Sigmar", cursive;
 }
 
 body {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(251, 233, 255);
+}
+
+section.game-section {
+  width: 60vw;
+  min-width: 350px;
+  height: 70vh;
+  min-height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.game-section > p {
+  border-radius: 0px 30px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: rgb(238, 238, 238);
+  background-color: rgb(43, 43, 43);
+}
+section.game-section div.game-body {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+section.game-section div.game-body div.side-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(43, 43, 43);
+  height: 100%;
+  width: 40%;
+  padding: 3px;
+  border-radius: 10px;
+}
+section.game-section div.game-body div.side-controls figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.game-section div.game-body div.side-controls figure img {
+  width: 70px;
+  min-width: 30px;
+  height: 70px;
+  min-height: 30px;
+  border: 2px solid yellow;
+  padding: 10px;
+  opacity: 30%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+section.game-section div.game-body div.side-controls figure img:hover {
+  opacity: 100%;
+}
+section.game-section div.game-body div#game-winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 50%;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+}
+section.game-section div.game-body div#game-winner p {
+  font-size: 90%;
+  text-align: center;
+}
+section.game-section div.game-body div#game-winner figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.game-section div.game-body div#game-winner figure img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */

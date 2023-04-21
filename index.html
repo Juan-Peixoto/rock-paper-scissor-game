@@ -8,29 +8,36 @@
     <meta name="keywords" content="javascript, rock-paper-scissors, html, css">
     <meta name="author" content="Juan Peixoto">
 
+    <script defer src="./main.js"></script>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
     <title>Rock, Paper & Scissors</title>
 </head>
 <body>
     <section class="game-section">
 
-        <p class="title">title</p>
+        <p class="title">Rock, Paper & Scissors - The Game</p>
 
         <div class="game-body">
-            
+
             <div class="side-controls" class="player-side-controls">
 
-                <figure id="rock-figure">
-                    <img id="player-rock" src="./images/" alt="Rock figure">
+                <figure>
+                    <img id="player-rock" src="./images/rock.png" alt="Rock figure">
 
                 </figure>
     
-                <figure id="paper-figure">
-                    <img id="player-paper" src="./images/" alt="Paper figure">
+                <figure>
+                    <img id="player-paper" src="./images/paper.png" alt="Paper figure">
 
                 </figure>
     
-                <figure id="scissor-figure">
-                    <img id="player-scissor" src="./images/" alt="Scissor figure">
+                <figure>
+                    <img id="player-scissor" src="./images/scisor.png" alt="Scissor figure">
 
                 </figure>
 
@@ -38,10 +45,10 @@
 
             <div id="game-winner">
 
-                <p>??? Won the game!</p>
+                <p>Player won the game!</p>
 
                 <figure class="winner-choice">
-                    <img src="" alt="Winner's choice">
+                    <img src="./images/rock.png" alt="Winner's choice">
 
                 </figure>
 
@@ -49,18 +56,18 @@
     
             <div class="side-controls" class="opponent-side-controls">
 
-                <figure id="rock-figure">
-                    <img id="opponent-rock" src="./images/" alt="Rock figure">
+                <figure>
+                    <img id="opponent-rock" src="./images/rock.png" alt="Rock figure">
 
                 </figure>
     
-                <figure id="paper-figure">
-                    <img id="opponent-paper" src="./images/" alt="Paper figure">
+                <figure>
+                    <img id="opponent-paper" src="./images/paper.png" alt="Paper figure">
 
                 </figure>
     
-                <figure id="scissor-figure">
-                    <img id="opponent-scissor" src="./images/" alt="Scissor figure">
+                <figure>
+                    <img id="opponent-scissor" src="./images/scisor.png" alt="Scissor figure">
 
                 </figure>
 
