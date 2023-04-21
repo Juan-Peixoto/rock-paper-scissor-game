@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  outline: none;
+  border: none;
+}
+
+body {
+  height: 100vh;
+}/*# sourceMappingURL=main.css.map */
