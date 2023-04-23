@@ -56,6 +56,10 @@ section.game-section div.game-body div.side-controls {
   padding: 3px;
   border-radius: 10px;
 }
+section.game-section div.game-body div.side-controls p {
+  color: white;
+  text-transform: uppercase;
+}
 section.game-section div.game-body div.side-controls figure {
   display: flex;
   align-items: center;
@@ -70,11 +74,27 @@ section.game-section div.game-body div.side-controls figure img {
   padding: 10px;
   opacity: 30%;
   border-radius: 15px;
+}
+section.game-section div.game-body div.side-controls figure img.player-choice {
+  width: 70px;
+  min-width: 30px;
+  height: 70px;
+  min-height: 30px;
+  border: 2px solid yellow;
+  padding: 10px;
+  opacity: 30%;
+  border-radius: 15px;
   cursor: pointer;
   transition: 0.2s;
 }
-section.game-section div.game-body div.side-controls figure img:hover {
+section.game-section div.game-body div.side-controls figure img.player-choice:hover {
   opacity: 100%;
+}
+section.game-section div.game-body div.side-controls figure img.selected {
+  opacity: 100%;
+}
+section.game-section div.game-body div.side-controls figure img.hidden {
+  display: none;
 }
 section.game-section div.game-body div#game-winner {
   display: flex;

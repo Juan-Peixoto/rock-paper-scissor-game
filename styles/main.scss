@@ -65,6 +65,12 @@ section.game-section
             padding: 3px;
             border-radius: 10px;
 
+            p
+            {
+                color: white;
+                text-transform: uppercase;
+            }
+
             figure
             {
                 display: flex;
@@ -81,6 +87,18 @@ section.game-section
                     padding: 10px;
                     opacity: 30%;
                     border-radius: 15px;
+                }
+
+                img.player-choice
+                {
+                    width: 70px;
+                    min-width: 30px;
+                    height: 70px;
+                    min-height: 30px;
+                    border: 2px solid yellow;
+                    padding: 10px;
+                    opacity: 30%;
+                    border-radius: 15px;
                     cursor: pointer;
                     transition: 0.2s;
 
@@ -88,6 +106,16 @@ section.game-section
                     {
                         opacity: 100%;
                     }
+                }
+
+                img.selected
+                {
+                    opacity: 100%;
+                }
+
+                img.hidden
+                {
+                    display: none;
                 }
             }
         }
