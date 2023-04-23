@@ -1,19 +1,17 @@
 const playerOptions = document.getElementsByName('player');
-const opponentOptions = document.getElementsByName('opponent');
+let playerChoice = "";
+let opponentChoice = "";
 
 startGame();
 
 
 function startGame()
 {
-    let playerChoice = "";
-    let opponentChoice = "";
-
     playerOptions.forEach(option => {
         option.addEventListener('click', playerPlay);
     });
 
-    return console.log('Game running!');;
+    return console.log('Game running!');
 }
 
 
@@ -23,12 +21,12 @@ function playerPlay(evt)
     {
         if(playerOptions[i] === evt.target)
         {
-            playerOptions[i].classList.add('selected')
+            playerOptions[i].classList.add('selected');
             playerChoice = playerOptions[i].id;
         }
         else
         {
-            playerOptions[i].classList.add('hidden')
+            playerOptions[i].classList.add('hidden');
         }
     }
 
@@ -38,6 +36,7 @@ function playerPlay(evt)
 
 function opponentPlay()
 {   
+    const opponentOptions = document.getElementsByName('opponent');
     let randomNum = Math.floor(Math.random() * 3);
     opponentChoice = opponentOptions[randomNum];
 
@@ -45,12 +44,12 @@ function opponentPlay()
     {
         if(opponentOptions[i] === opponentChoice)
         {
-            opponentOptions[i].classList.add('selected')
+            opponentOptions[i].classList.add('selected');
             opponentChoice = opponentOptions[i].id;
         }
         else
         {
-            opponentOptions[i].classList.add('hidden')
+            opponentOptions[i].classList.add('hidden');
         }
     }
 
@@ -131,37 +130,22 @@ function showWinner(winner, winnerHand)
 {
     const label = document.getElementById('winner-label');
     const winnerHandBox = document.getElementById('winner-hand');
-    const playerWins = document.getElementById('player-wins');
-    const opponentWins = document.getElementById('opponent-wins');
 
     switch(winner)
     {
         case 'Draw':
             winnerHandBox.style.display = 'none';
-            return label.innerHTML = "It's a Draw!";
+            label.innerHTML = "It's a Draw!";
+            break;
 
         case 'Player':
             winnerHandBox.setAttribute('src', `./images/${winnerHand}.png`);
-            return label.innerHTML = "Player won the game!";
+            label.innerHTML = "Player won the game!";
+            break;
 
         case 'Opponent':
             winnerHandBox.setAttribute('src', `./images/${winnerHand}.png`);
-            return label.innerHTML = "Opponent won the game!";
+            label.innerHTML = "Opponent won the game!";
+            break;
     }
-
-    //count and show number of wins of both
-}
-
-
-function restartGame()
-{   
-    // ask for play again
-    //  if yes
-    //      sum and interates the total of wins of the winner
-    //      show it in the botton
-    //      then restart the game
-    //  else
-    //      restart the game
-
-    return null;
 }
