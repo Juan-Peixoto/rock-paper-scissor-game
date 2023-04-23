@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +18,7 @@
 
     <title>Rock, Paper & Scissors</title>
 </head>
+
 <body>
     <section class="game-section">
 
@@ -26,29 +28,33 @@
 
             <div class="side-controls" class="player-side-controls">
 
+                <p>Player</p>
+
                 <figure>
-                    <img id="player-rock" src="./images/rock.png" alt="Rock figure">
+                    <img class="player-choice" name="player" id="rock" src="./images/rock.png" alt="Rock figure">
 
                 </figure>
     
                 <figure>
-                    <img id="player-paper" src="./images/paper.png" alt="Paper figure">
+                    <img class="player-choice" name="player" id="paper" src="./images/paper.png" alt="Paper figure">
 
                 </figure>
     
                 <figure>
-                    <img id="player-scissor" src="./images/scisor.png" alt="Scissor figure">
+                    <img class="player-choice" name="player" id="scissor" src="./images/scissor.png" alt="Scissor figure">
 
                 </figure>
+
+                <p id="player-wins">0 Wins</p>
 
             </div>
 
             <div id="game-winner">
 
-                <p>Player won the game!</p>
+                <p id="winner-label">Player won the game!</p>
 
                 <figure class="winner-choice">
-                    <img src="./images/rock.png" alt="Winner's choice">
+                    <img id="winner-hand" src="./images/rock.png" alt="Winner's choice">
 
                 </figure>
 
@@ -56,20 +62,24 @@
     
             <div class="side-controls" class="opponent-side-controls">
 
+                <p>Opponent</p>
+
                 <figure>
-                    <img id="opponent-rock" src="./images/rock.png" alt="Rock figure">
+                    <img name="opponent" id="opponent-rock" src="./images/rock.png" alt="Rock figure">
 
                 </figure>
     
                 <figure>
-                    <img id="opponent-paper" src="./images/paper.png" alt="Paper figure">
+                    <img name="opponent" id="opponent-paper" src="./images/paper.png" alt="Paper figure">
 
                 </figure>
     
                 <figure>
-                    <img id="opponent-scissor" src="./images/scisor.png" alt="Scissor figure">
+                    <img name="opponent" id="opponent-scissor" src="./images/scissor.png" alt="Scissor figure">
 
                 </figure>
+
+                <p id="opponent-wins">0 Wins</p>
 
             </div>
         </div>
